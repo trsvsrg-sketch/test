@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <script>
+      MathJax = { tex: { inlineMath: [['\\(', '\\)']] } };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эксперт ЕГЭ — Задачи</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 (иконки) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+<!-- Навигация (Верхняя полка) -->
+
+<!-- ВЕРХНЯЯ СТРОКА: Сюда шапка вставится сама из меню.js -->
+<div id="dynamic-header"></div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <!-- ЛЕВАЯ КОЛОНКА: Сюда меню вставится автоматически из файла меню.js -->
+        <div class="col-lg-3 mb-4" id="dynamic-sidebar"></div>
+
+
+
+
+
+
+        <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА: Уникальные задачи текущей страницы -->
+        <div class="col-lg-9">
+            <h4 class="mb-4">Номер 9. Анализ данных таблицы</h4>
+
+
+
+
+
+
+<!-- Задача 1 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 1</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится двоичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N делится на 3, то к этой записи дописываются три последние двоичные цифры;<br>
+           б) если число N на 3 не делится, то остаток от деления сначала увеличивается на единицу, после чего полученное число умножается на 3, а затем результат умножения переводится в двоичную запись и дописывается в конец числа.<br>
+           Полученная таким образом запись является двоичной записью искомого числа R.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа 12₁₀ = 1100₂ результатом является число 1100100₂ = 100₁₀, а для исходного числа 4₁₀ = 100₂ это число 100110₂ = 38₁₀.<br>
+        <br>
+        Укажите максимальное число R, не превышающее 416, которое может быть получено с помощью описанного алгоритма. В ответе запишите это число в десятичной системе счисления.<br>
+        <br>
+        Ответ: _________.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution1"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_1" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 2 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 2</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится двоичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N делится на 3, то к этой записи дописываются три последние двоичные цифры;<br>
+           б) если число N на 3 не делится, то остаток от деления сначала уменьшается на единицу, после чего полученное число умножается на 3, а затем результат умножения переводится в двоичную запись и дописывается в конец числа.<br>
+           Полученная таким образом запись является двоичной записью искомого числа R.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа 12₁₀ = 1100₂ результатом является число 1100100₂ = 100₁₀, а для исходного числа 5₁₀ = 101₂ это число 10111₂ = 23₁₀.<br>
+        <br>
+        Укажите максимальное число R, меньшее 416, которое может быть получено с помощью описанного алгоритма. В ответе запишите это число в десятичной системе счисления.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution2"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_2" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 3 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 3</span>
+    </div>
+
+    <div class="task-title mt-2">
+        Укажите наименьшее число K, при обработке которого автомат выдаст число L = 1318.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution3"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_3" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 4 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 4</span>
+    </div>
+
+    <div class="task-title mt-2">
+        Укажите наименьшее число K, при обработке которого автомат выдаст число L = 2013.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution4"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_4" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 5 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 5</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        1. Строится двоичная запись числа N.<br>
+        2. К этой записи дописываются справа ещё два разряда по следующему правилу:<br>
+        a) складываются все цифры двоичной записи числа N, и остаток от деления суммы на 2 дописывается в конец числа (справа).<br>
+        Например, запись 11100 преобразуется в запись 111001;<br>
+        б) над этой записью производятся те же действия — справа дописывается остаток от деления суммы её цифр на 2.<br>
+        Полученная таким образом запись (в ней на два разряда больше, чем в записи исходного числа N) является двоичной записью результирующего числа R.<br>
+        Укажите такое наименьшее число N, для которого результат работы данного алгоритма больше числа 77. В ответе это число запишите в десятичной системе счисления.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution5"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_5" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 6 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 6</span>
+    </div>
+
+    <div class="task-title mt-2">
+        Укажите минимальное число N, после обработки которого с помощью этого алгоритма получается число R, большее 40.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution6"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_6" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 7 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 7</span>
+    </div>
+
+    <div class="task-title mt-2">
+        Укажите минимальное число R, большее 151, которое может быть получено с помощью описанного алгоритма. В ответе запишите это число в десятичной системе счисления.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution7"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_7" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 8 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 8</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        1. Строится двоичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число чётное, то к двоичной записи числа слева дописывается 10;<br>
+           б) если число нечётное, то к двоичной записи числа слева дописывается 1 и справа дописывается 01.<br>
+        Полученная таким образом запись является двоичной записью искомого числа R.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа \(4_{10} = 100_2\) результатом является число \(20_{10} = 10100_2\), а для исходного числа \(5_{10} = 101_2\) это число \(53_{10} = 110101_2\).<br>
+        <br>
+        Укажите максимальное число R, которое может быть результатом работы данного алгоритма, при условии, что N не больше 12. В ответе запишите это число в десятичной системе счисления.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution8"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_8" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 9 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 9</span>
+    </div>
+
+    <div class="task-title mt-2">
+        Укажите минимальное число N, после обработки которого с помощью этого алгоритма получается число R, не меньше 200.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution9"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_9" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 10 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 10</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится двоичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N чётное, то в этой записи каждая единица заменяется на 11;<br>
+           б) если число N нечётное, то в этой записи каждый нуль заменяется на 00.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа \(4_{10} = 100_2\) результатом является число \(1100_2 = 12_{10}\), а для исходного числа \(5_{10} = 101_2\) это число \(1001_2 = 9_{10}\).<br>
+        <br>
+        Укажите минимальное число N, после обработки которого с помощью этого алгоритма получается число R, большее 70.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution10"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_10" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 11 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 11</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится двоичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N чётное, то в этой записи каждая единица заменяется на 11;<br>
+           б) если число N нечётное, то в этой записи каждый нуль заменяется на 00.<br>
+        Полученная таким образом запись является двоичной записью искомого числа R.<br>
+        <br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа \(4_{10} = 100_2\) результатом является число \(1100_2 = 12_{10}\), а для исходного числа \(5_{10} = 101_2\) это число \(1001_2 = 9_{10}\).<br>
+        <br>
+        Укажите максимальное число N, после обработки которого с помощью этого алгоритма получается число R, меньшее 70, но при этом отличное от самого числа N.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution11"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_11" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 12 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 12</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится двоичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N делится на 4, то к этой записи дописывается справа она же;<br>
+           б) если число N на 4 не делится, то к этой записи дописывается справа эта же запись, но в обратном порядке.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа \(4_{10} = 100_2\) результатом является число \(100100_2 = 36_{10}\), а для исходного числа \(11_{10} = 1011_2\) это число \(10111101_2 = 189_{10}\).<br>
+        <br>
+        Укажите минимальное число N, после обработки которого с помощью этого алгоритма получается число R, не меньше 544.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution12"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_12" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 13 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 13</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N (N > 3). Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится двоичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N чётное, то к этой записи дописываются справа последние две цифры записи в том же порядке, в котором они идут в самой записи;<br>
+           б) если число N нечётное, то к этой записи дописываются справа последние три цифры записи в том же порядке, в котором они идут в самой записи.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа 4₁₀ = 100₂ результатом является число 10000₂ = 16₁₀,<br>
+        а для исходного числа 9₁₀ = 1001₂ это число 1001001₂ = 73₁₀.<br>
+        <br>
+        Укажите минимальное число N, после обработки которого с помощью этого алгоритма получается число R, большее 256.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution13"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_13" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 14 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 14</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится четверичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N делится на 4, то к этой записи дописываются две последние четверичные цифры;<br>
+           б) если число N на 4 не делится, то остаток от деления умножается на 2, переводится в четверичную запись и дописывается в конец числа.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа \(11_{10} = 23_4\) результатом является число \(2312_4 = 182_{10}\), а для исходного числа \(12_{10} = 30_4\) это число \(3030_4 = 204_{10}\).<br>
+        <br>
+        Укажите максимальное число N, после обработки которого с помощью этого алгоритма получается число R, меньшее 261.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution14"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_14" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 15 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 15</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится четверичная запись числа N.<br>
+        <br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+        <br>
+        a) если число N делится на 4, то к этой записи дописываются две последние четверичные цифры;<br>
+        <br>
+        б) если число N на 4 не делится, то остаток от деления умножается на 2, переводится в четверичную запись и дописывается в конец числа.<br>
+        <br>
+        Полученная таким образом запись является четверичной записью искомого числа R.<br>
+        <br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа 11_{10} = 23_4 результатом является число 2312_4 = 182_{10}, а для исходного числа 12_{10} = 30_4 это число 3030_4 = 204_{10}.<br>
+        <br>
+        Укажите минимальное число N, после обработки которого с помощью этого алгоритма получается число R, не меньше 1025.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution15"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_15" class="solution-block">
+
+    </div>
+</div>
+
+
+<!-- Задача 16 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМАТИКА</span>
+            <!--<span class="badge bg-secondary">Сборники Крылова</span>-->
+        </div>
+        <span class="text-muted">№ 16</span>
+    </div>
+
+    <div class="task-title mt-2">
+        На вход алгоритма подаётся натуральное число N. Алгоритм строит по нему новое число R следующим образом.<br>
+        <br>
+        1. Строится четверичная запись числа N.<br>
+        2. Далее эта запись обрабатывается по следующему правилу:<br>
+           а) если число N делится на 4, то к этой записи дописываются две последние четверичные цифры;<br>
+           б) если число N на 4 не делится, то остаток от деления умножается на 2, переводится в четверичную запись и дописывается в конец числа.<br>
+        3. Результат переводится в десятичную систему и выводится на экран.<br>
+        <br>
+        Например, для исходного числа \(11_{10} = 23_4\) результатом является число \(2312_4 = 182_{10}\), а для исходного числа \(12_{10} = 30_4\) это число \(3030_4 = 204_{10}\).<br>
+        <br>
+        Укажите минимальное число N, после обработки которого с помощью этого алгоритма получается число R, не меньше 1088.
+    </div>
+    
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Анализ таблицы</p>
+   
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution16"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    
+    <div id="solution_16" class="solution-block">
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="dynamic-footer"></div>
+
+
+
+<!-- Скрипты Bootstrap и спойлер решений -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    document.querySelectorAll('.btn-toggle-solution').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const solutionBlock = document.getElementById(targetId);
+            if (solutionBlock) {
+                const isVisible = solutionBlock.classList.contains('visible');
+                solutionBlock.classList.toggle('visible');
+                this.innerHTML = isVisible ? '<i class="fa-solid fa-eye me-1"></i>Показать решение' : '<i class="fa-solid fa-eye-slash me-1"></i>Скрыть решение';
+            }
+        });
+    });
+</script>
+<!-- ПОДКЛЮЧАЕМ НАШ ОБЩИЙ ФАЙЛ МЕНЮ -->
+<script src="menuinfo.js"></script>
+
+
+</body>
+</html>
