@@ -1,0 +1,97 @@
+  body {
+    background-color: var(--bs-body-tertiary-bg);
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+        
+
+.sidebar {
+            background: var(--bs-body-bg); /* Теперь подстроится под тему */
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid var(--bs-border-color); /* Добавит рамку в темной теме */
+        }
+        .sidebar .list-group-item {
+            background: transparent; /* Убираем жесткий фон у ссылок */
+            border: none;
+            padding: 0.4rem 0.75rem;
+            font-size: 0.95rem;
+            color: var(--bs-body-color); /* Цвет текста подстроится под тему */
+        }
+        .sidebar .list-group-item:hover {
+            background-color: var(--bs-tertiary-bg); /* Эффект наведения для темной темы */
+            cursor: pointer;
+        }
+        /* Было background: white; — это красило карточку задачи в белый */
+        .task-card {
+            background: var(--bs-body-bg); /* Теперь подстроится под тему */
+            border: 1px solid var(--bs-border-color); /* Добавит рамку */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+        }
+
+
+
+
+
+/* Кнопка "Наверх" */
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--bs-primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    
+    /* Эффект плавного появления и скрытия кнопки */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+}
+
+/* Эффект при наведении */
+#scroll-to-top:hover {
+    transform: translateY(-3px);
+    background-color: var(--bs-primary-border-subtle);
+    color: var(--bs-primary);
+}
+
+/* Класс, который JS будет добавлять при прокрутке вниз */
+#scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+        
+.solution-block {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: var(--bs-tertiary-bg); /* Подстроится под тему */
+            border-radius: 6px;
+            display: none;
+        }
+
+
+.task-title { font-weight: 600; margin-bottom: 0.5rem; }
+        .solution-block.visible { display: block; }
+        .btn-toggle-solution { font-size: 0.9rem; }
+        .header-nav .nav-link { font-weight: 500; }

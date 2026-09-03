@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <script>
+      MathJax = { tex: { inlineMath: [['\\(', '\\)']] } };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эксперт ЕГЭ — Задачи</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 (иконки) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+<!-- Навигация (Верхняя полка) -->
+
+<!-- ВЕРХНЯЯ СТРОКА: Сюда шапка вставится сама из меню.js -->
+<div id="dynamic-header"></div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <!-- ЛЕВАЯ КОЛОНКА: Сюда меню вставится автоматически из файла меню.js -->
+        <div class="col-lg-3 mb-4" id="dynamic-sidebar"></div>
+
+
+
+
+
+
+        <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА: Уникальные задачи текущей страницы -->
+        <div class="col-lg-9">
+            <h4 class="mb-4">Задачи по теме «УСЛОВИЕ ФАНО»</h4>
+
+
+
+
+
+<!-- Задача 1 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМЕТЕКА</span>
+            <span class="badge bg-secondary">Базовый уровень</span>
+        </div>
+        <span class="text-muted">№ 201</span>
+    </div>
+    <div class="task-title mt-2">По каналу связи передаются сообщения, содержащие только 4 буквы: А, Б, В, Г. Для кодирования букв А, Б и В используются кодовые слова: А — 0, Б — 10, В — 110. Укажите кратчайшее кодовое слово для буквы Г, при котором код будет допускать однозначное декодирование (выполняется условие Фано). Если таких слов несколько, укажите слово с наименьшим числовым значением.</div>
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Кодирование информации / Условие Фано</p>
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution201"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    <div id="solution201" class="solution-block">
+        <strong>Решение:</strong>
+        <p class="mb-1 mt-2">По условию Фано никакое кодовое слово не должно быть началом другого кодового слова. Построим двоичное дерево:</p>
+        <p class="mb-1">Ветвь 0 занята буквой А. Ветвь 10 занята буквой Б. Ветвь 110 занята буквой В.</p>
+        <p class="mb-1">Свободной остаётся ветвь 111. Длина этого слова равна 3. Более коротких свободных кодовых слов на дереве нет.</p>
+        <p class="mb-0">Ответ: 111</p>
+    </div>
+</div>
+
+<!-- Задача 2 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМЕТЕКА</span>
+            <span class="badge bg-secondary">Базовый уровень</span>
+        </div>
+        <span class="text-muted">№ 202</span>
+    </div>
+    <div class="task-title mt-2">Для кодирования букв К, Л, М, Н решили использовать неравномерный двоичный код, удовлетворяющий условию Фано. Известны кодовые слова для трёх букв: К — 00, Л — 01, М — 11. Какую наименьшую длину может иметь кодовое слово для буквы Н?</div>
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Кодирование информации / Условие Фано</p>
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution202"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    <div id="solution202" class="solution-block">
+        <strong>Решение:</strong>
+        <p class="mb-1 mt-2">Оценим занятые кодовые слова длины 2: 00, 01, 11.</p>
+        <p class="mb-1">Среди кодовых слов длины 2 осталось свободным только слово 10. Оно не является началом уже занятых кодов и ни одно занятое слово не является его началом.</p>
+        <p class="mb-1">Следовательно, для буквы Н можно использовать код 10. Его длина равна 2.</p>
+        <p class="mb-0">Ответ: 2</p>
+    </div>
+</div>
+
+<!-- Задача 3 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМЕТЕКА</span>
+            <span class="badge bg-secondary">Базовый уровень</span>
+        </div>
+        <span class="text-muted">№ 203</span>
+    </div>
+    <div class="task-title mt-2">Для кодирования букв А, Б, В, Г, Д используется неравномерный двоичный код, удовлетворяющий прямому условию Фано. Кодовые слова для некоторых букв известны: А — 00, Б — 01, В — 100. Какое кратчайшее кодовое слово можно использовать для буквы Г, если известно, что код для буквы Д должен иметь длину не менее 4 символов?</div>
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Кодирование информации / Условие Фано</p>
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution203"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    <div id="solution203" class="solution-block">
+        <strong>Решение:</strong>
+        <p class="mb-1 mt-2">Рассмотрим свободные ветви двоичного дерева. Ветвь 0 полностью закрыта кодами А(00) и Б(01). От ветви 1 идут пути 10 и 11.</p>
+        <p class="mb-1">Ветвь 10 разделяется на 100 (занято В) и 101 (свободно). Ветвь 11 свободна.</p>
+        <p class="mb-1">Нам нужно закодировать две буквы: Г и Д, причём для Д длина должна быть \( \ge 4 \). Если мы отдадим под Г короткий код 11 (длина 2), то ветвь 11 закроется. Тогда для Д останется место только в 101, откуда можно получить коды длины 4 (1010 и 1011). Это удовлетворяет условию.</p>
+        <p class="mb-0">Ответ: 11</p>
+    </div>
+</div>
+
+<!-- Задача 4 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМЕТЕКА</span>
+            <span class="badge bg-secondary">Базовый уровень</span>
+        </div>
+        <span class="text-muted">№ 204</span>
+    </div>
+    <div class="task-title mt-2">Для кодирования букв О, П, Р, С, Т используются кодовые слова: О — 00, П — 01, Р — 10, С — 110. Укажите кодовое слово для буквы Т, при котором суммарная длина всех пяти кодовых слов будет минимальной, а код будет удовлетворять условию Фано.</div>
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Кодирование информации / Условие Фано</p>
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution204"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    <div id="solution204" class="solution-block">
+        <strong>Решение:</strong>
+        <p class="mb-1 mt-2">Проверим доступные свободные места на двоичном дереве:</p>
+        <p class="mb-1">Коды 00, 01, 10 полностью блокируют свои поддеревья. Код 11 разделяется на 110 (занято буквой С) и 111.</p>
+        <p class="mb-1">Единственным возможным свободным кодовым словом, не нарушающим условие Фано, является 111. Его длина равна 3, что минимизирует общую сумму длин.</p>
+        <p class="mb-0">Ответ: 111</p>
+    </div>
+</div>
+
+<!-- Задача 5 -->
+<div class="task-card">
+    <div class="d-flex justify-content-between align-items-start">
+        <div>
+            <span class="badge bg-primary me-2">ИНФОРМЕТЕКА</span>
+            <span class="badge bg-secondary">Базовый уровень</span>
+        </div>
+        <span class="text-muted">№ 205</span>
+    </div>
+    <div class="task-title mt-2">По каналу связи передаются сообщения, содержащие 5 букв: А, Б, В, Г, Д. Используется неравномерный код, удовлетворяющий условию Фано. Известны коды букв: А — 01, Б — 10, В — 11. Укажите кратчайшее возможное кодовое слово для буквы Г, при котором останется место для кодирования буквы Д. Если таких слов несколько, укажите слово с наибольшим числовым значением.</div>
+    <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Информатика / Кодирование информации / Условие Фано</p>
+    <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution205"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+    <div id="solution205" class="solution-block">
+        <strong>Решение:</strong>
+        <p class="mb-1 mt-2">Проанализируем дерево: коды Б(10) и В(11) закрывают ветвь 1. Ветвь 0 разделяется на 00 и 01 (занято А).</p>
+        <p class="mb-1">Свободным осталось поддерево, начинающееся с 00. Если мы назначим букве Г код 00, то свободных мест на дереве не останется, и мы не сможем закодировать букву Д.</p>
+        <p class="mb-1">Развернем узел 00 на два направления: 000 и 001. Одно из них отдадим букве Г, второе останется для Д. Нам нужно кодовое слово для Г с наибольшим числовым значением, то есть 001.</p>
+        <p class="mb-0">Ответ: 001</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Карточка задачи 1 -->
+            <div class="task-card">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <span class="badge bg-primary me-2">Математика</span>
+                        <span class="badge bg-secondary">Базовый уровень</span>
+                    </div>
+                    <span class="text-muted">№ 101</span>
+                </div>
+                <div class="task-title mt-2">Решите уравнение: \( x^2 - 5x + 6 = 0 \)</div>
+                <p class="text-muted small mb-2"><i class="fa-regular fa-folder-open me-1"></i>Алгебра / Квадратные уравнения</p>
+                <button class="btn btn-outline-primary btn-sm btn-toggle-solution" data-target="solution1"><i class="fa-solid fa-eye me-1"></i>Показать решение</button>
+                <div id="solution1" class="solution-block">
+                    <strong>Решение:</strong>
+                    <p class="mb-1 mt-2">Дискриминант: \( D = (-5)^2 - 4 \cdot 1 \cdot 6 = 25 - 24 = 1 \).</p>
+                    <p class="mb-1">Корни: \( x_{1,2} = \frac{5 \pm \sqrt{1}}{2} = \frac{5 \pm 1}{2} \).</p>
+                    <p class="mb-0">Ответ: \( x_1 = 3, \; x_2 = 2 \).</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="dynamic-footer"></div>
+
+
+
+<!-- Скрипты Bootstrap и спойлер решений -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    document.querySelectorAll('.btn-toggle-solution').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const solutionBlock = document.getElementById(targetId);
+            if (solutionBlock) {
+                const isVisible = solutionBlock.classList.contains('visible');
+                solutionBlock.classList.toggle('visible');
+                this.innerHTML = isVisible ? '<i class="fa-solid fa-eye me-1"></i>Показать решение' : '<i class="fa-solid fa-eye-slash me-1"></i>Скрыть решение';
+            }
+        });
+    });
+</script>
+<!-- ПОДКЛЮЧАЕМ НАШ ОБЩИЙ ФАЙЛ МЕНЮ -->
+<script src="menuinfo.js"></script>
+
+
+</body>
+</html>
