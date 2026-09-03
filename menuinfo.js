@@ -56,7 +56,7 @@ if (sidebarContainer) {
    <a href="#" class="list-group-item list-group-item-action">
 4.Фано </a>
 
-   <a href="5 INFO.html" class="list-group-item list-group-item-action">
+   <a href="5_INFO.html" class="list-group-item list-group-item-action">
 5.Алгоритм </a>
 
    <a href="#" class="list-group-item list-group-item-action">
